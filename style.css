@@ -28,6 +28,12 @@ body {
 .main-content {
     background-color: green;
     grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "projects announcements"
+    "projects trending";
 }
 
 .logo {
@@ -36,7 +42,7 @@ body {
 }
 
 #cat {
-    max-height: 50px;f
+    max-height: 50px;
     max-width: 50px;    
 }
 
@@ -78,4 +84,22 @@ body {
 
 .welcome {
     display: flex;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
