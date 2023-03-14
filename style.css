@@ -1,3 +1,7 @@
+:root {
+
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -12,21 +16,21 @@ body {
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #0891b2;
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 4fr 2fr 3fr;
+    grid-template-rows: 1fr 4fr 2fr 2fr;
 }
 
 .header {
-    background-color: red;
+    background-color: #ecfeff;
     grid-area: header;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
 .main-content {
-    background-color: green;
+    background-color: gray;
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -39,32 +43,52 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    font-size: 50px;
+    margin-left: 10px;
 }
 
 #cat {
-    max-height: 50px;
-    max-width: 50px;    
+    max-height: 75px;
+    max-width: 75px;    
+}
+
+.navigation-top img,
+.navigation-bottom img {
+    max-height: 30px;
+    max-width: 30px;
+    margin: 0px 25px;     
+}
+
+.navigation-top,
+.navigation-bottom {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 .navigation-top {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
 }
 
 .navigation-bottom {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
 }
 
 .nav-link,
 .logo {
     display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 10px 0px 10px;
+}
+
+.header {
+    padding: 0px 50px;
 }
 
 .header-top,
@@ -74,8 +98,20 @@ body {
     align-items: center;
 }
 
+.header img {
+    max-height: 30px;
+    max-width: 30px;    
+}
+
 .searchbar {
     display: flex;
+}
+
+.searchbar input {
+    border: none;
+    border-radius: 8px;
+    background-color: gray;
+    width: 400px;
 }
 
 .header-icons {
