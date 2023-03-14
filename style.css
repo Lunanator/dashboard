@@ -21,6 +21,8 @@ body {
 .header {
     background-color: red;
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .main-content {
@@ -56,5 +58,24 @@ body {
 
 .nav-link,
 .logo {
+    display: flex;
+}
+
+.header-top,
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+}
+
+.header-icons {
+    display: flex;
+}
+
+.welcome {
     display: flex;
 }
