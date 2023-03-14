@@ -1,1 +1,27 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows:20% 80% ;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
 
+.sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+.header {
+    background-color: red;
+    grid-area: header;
+}
+
+.main-content {
+    background-color: green;
+    grid-area: main;
+}
