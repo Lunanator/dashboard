@@ -98,7 +98,13 @@ body {
     align-items: center;
 }
 
-.header img {
+.profile-pic {
+    max-height: 50px;
+    max-width: 50px;   
+}
+
+.searchbar img,
+#bell {
     max-height: 30px;
     max-width: 30px;    
 }
@@ -111,11 +117,11 @@ body {
     border: none;
     border-radius: 8px;
     background-color: gray;
-    width: 400px;
 }
 
 .header-icons {
     display: flex;
+    align-items: center;
 }
 
 .welcome {
@@ -130,6 +136,25 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box {
+    background-color: #ecfeff;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    border-left: 8px solid #0891b2;
+}
+
+.box-icons {
+    align-items: center;
+}
+
+.box-icons img {
+    float: right;
+    margin-left: 10px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .announcements {
