@@ -43,7 +43,7 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr 6fr;
+    grid-template-rows: 1fr 7fr 1fr 7fr;
     grid-template-areas: 
     "projects-title announcements-title"
     "projects announcements"
@@ -168,6 +168,12 @@ body {
     margin: 0px 10px;    
 }
 
+.main-content-title {
+    font-size: 24px;
+    align-self: center;
+    margin-left: 20px;
+}
+
 .projects-title {
     grid-area: projects-title;
 }
@@ -184,14 +190,18 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 10px;
 }
 
 .box {
     background-color: #ecfeff;
     border-radius: 8px;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px 10px;
+    padding: 10px 20px;
     border-left: 8px solid #0891b2;
+    position: relative;
+    display: grid;
+    grid-template-rows: 12.5% 50% 37.5%;
 }
 
 .box-icons {
@@ -211,8 +221,9 @@ body {
 
 .announcements-wrapper {
     background-color: #ecfeff;
-    margin: 10px;
+    margin: 10px 20px 10px 10px;
     padding: 10px;
+    border-radius: 8px;
 }
 
 .trending-title {
@@ -225,6 +236,7 @@ body {
 
 .trending-wrapper {
     background-color: #ecfeff;
-    margin: 10px;
+    margin: 10px 20px 10px 10px;
     padding: 10px;
+    border-radius: 8px;
 }
