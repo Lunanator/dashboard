@@ -110,22 +110,51 @@ body {
 }
 
 .searchbar {
+    min-width: 400px;
     display: flex;
 }
 
 .searchbar input {
+    width: 600px;
     border: none;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: gray;
 }
 
 .header-icons {
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.searchbar > *,
+.header-icons > * {
+    margin: 0px 5px;
+}
+
+.welcome {
+    min-width: 400px;
     display: flex;
     align-items: center;
 }
 
-.welcome {
-    display: flex;
+.welcome img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.username {
+    font-size: 32px;
+}
+
+.buttons > button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    background-color: #0891b2;
+    margin: 0px 10px;    
 }
 
 .projects {
@@ -161,6 +190,18 @@ body {
     grid-area: announcements;
 }
 
+.announcements-wrapper {
+    background-color: #ecfeff;
+    margin: 10px;
+    padding: 10px;
+}
+
 .trending {
     grid-area: trending;
+}
+
+.trending-wrapper {
+    background-color: #ecfeff;
+    margin: 10px;
+    padding: 10px;
 }
