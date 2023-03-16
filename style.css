@@ -43,12 +43,13 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr 7fr;
+    grid-template-rows: 40px 7fr 40px 7fr 40px;
     grid-template-areas: 
     "projects-title announcements-title"
     "projects announcements"
     "projects trending-title"
-    "projects trending";
+    "projects trending"
+    "empty empty";
 }
 
 .logo {
@@ -201,11 +202,7 @@ body {
     border-left: 8px solid #0891b2;
     position: relative;
     display: grid;
-    grid-template-rows: 12.5% 50% 37.5%;
-}
-
-.box-icons {
-    align-items: center;
+    grid-template-rows: 50px 120px 30px;
 }
 
 .box-icons img {
